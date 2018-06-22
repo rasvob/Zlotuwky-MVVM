@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/exchange_view_heading_visa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/visa"
+        android:textSize="@dimen/material_text_display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/exchange_view_amount_visa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/material_text_title"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/exchange_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exchange_view_heading_visa" />
+
+    <TextView
+        android:id="@+id/exchange_view_rate_visa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/material_text_subhead"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/exchange_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exchange_view_amount_visa" />
+
+    <ImageView
+        android:id="@+id/exchange_view_tick_img_visa"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/exchange_view_heading_visa"
+        app:layout_constraintStart_toEndOf="@+id/exchange_view_heading_visa"
+        app:layout_constraintTop_toTopOf="@+id/exchange_view_heading_visa"
+        app:layout_constraintVertical_bias="0.50"
+        app:srcCompat="@drawable/ic_baseline_check_circle_outline_24px" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Zlotuwky</string>
+    <string name="action_settings">Settings</string>
+    <string name="download_visa">Stáhnout VISA</string>
+    <string name="create_own_">Nastavit vlastní kurz</string>
+    <string name="rate_settings">Nastavení kurzů</string>
+    <string name="hint_amount">Zadejte částku v PLN</string>
+    <string name="visa">VISA</string>
+    <string name="kantor">Kantor</string>
+    <string name="exchange_default">1.000</string>
+    <string name="set_own_course_w_example">Zadejte vlastní kurz (např. 15.80)</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Zrušit</string>
+    <string name="set_own_rate_heading">Nastavit vlastní kurz</string>
+    <string name="bad_input">Špatný vstup</string>
+    <string name="err_are_you_online">Jste online?</string>
+    <string name="rate_download_is_pending">Kurz se stahuje</string>
+</resources>

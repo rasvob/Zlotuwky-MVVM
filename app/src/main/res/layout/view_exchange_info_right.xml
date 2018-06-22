@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/exchange_view_heading_office"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/kantor"
+        android:textSize="@dimen/material_text_display1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/exchange_view_amount_office"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/exchange_default"
+        android:textSize="@dimen/material_text_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exchange_view_heading_office" />
+
+    <TextView
+        android:id="@+id/exchange_view_rate_office"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/exchange_default"
+        android:textSize="@dimen/material_text_subhead"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exchange_view_amount_office" />
+
+    <ImageView
+        android:id="@+id/exchange_view_tick_img_office"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/exchange_view_heading_office"
+        app:layout_constraintEnd_toStartOf="@+id/exchange_view_heading_office"
+        app:layout_constraintTop_toTopOf="@+id/exchange_view_heading_office"
+        app:layout_constraintVertical_bias="0.50"
+        app:srcCompat="@drawable/ic_baseline_check_circle_outline_24px" />
+
+</android.support.constraint.ConstraintLayout>
