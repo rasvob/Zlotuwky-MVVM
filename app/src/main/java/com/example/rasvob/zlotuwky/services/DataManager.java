@@ -24,7 +24,31 @@ public class DataManager {
         this.pageDownloadService = pageDownloadService;
     }
 
-    public double getVisaExchangeRate() throws IOException, ParserConfigurationException, XPathExpressionException, SAXException {
+    public double getVisaExchangeRateFromNetwork() throws IOException, ParserConfigurationException, XPathExpressionException, SAXException {
         return pageDownloadService.getRate();
+    }
+
+    public double getVisaRate() {
+        return getRate(PREFS_VISA_RATE);
+    }
+
+    public void saveVisaRate(double rate) {
+        saveRate(PREFS_VISA_RATE, rate);
+    }
+
+    public double getOfficeRate() {
+        return getRate(PREFS_OFFICE_RATE);
+    }
+
+    public void saveOfficeRate(double rate) {
+        saveRate(PREFS_OFFICE_RATE, rate);
+    }
+
+    private void saveRate(String key, double value) {
+        sharedPreferences.edit().putFloat(key, (float) value).apply();
+    }
+
+    private double getRate(String key) {
+        return sharedPreferences.getFloat(key, 1.0f);
     }
 }

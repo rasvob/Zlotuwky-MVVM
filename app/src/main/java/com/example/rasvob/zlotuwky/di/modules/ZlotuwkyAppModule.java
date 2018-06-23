@@ -9,6 +9,7 @@ import com.example.rasvob.zlotuwky.services.DataManager;
 import com.example.rasvob.zlotuwky.services.PageDownloadService;
 
 import java.io.File;
+import java.util.concurrent.TimeUnit;
 
 import javax.inject.Singleton;
 
@@ -30,6 +31,7 @@ public class ZlotuwkyAppModule {
     @Singleton
     public OkHttpClient okHttpClient(Cache cache) {
         return new OkHttpClient.Builder()
+                .connectTimeout(3000, TimeUnit.MILLISECONDS)
                 .cache(cache)
                 .build();
     }

@@ -97,6 +97,7 @@ public class MainActivity extends AppCompatActivity implements HasSupportFragmen
         vm.getHideProgress().observe(this, o -> hideProgress());
         vm.getOfficeAmount().observe(this, this::onOfficeAmountChanged);
         vm.getVisaAmount().observe(this, this::onVisaAmountChanged);
+        vm.loadRates();
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

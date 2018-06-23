@@ -5,13 +5,13 @@ import android.arch.lifecycle.ViewModelProvider;
 import android.support.annotation.NonNull;
 
 import com.example.rasvob.zlotuwky.services.DataManager;
-import com.example.rasvob.zlotuwky.services.ExchangeConvertor;
+import com.example.rasvob.zlotuwky.services.ExchangeConverter;
 
 public class MainActivityViewModelFactory implements ViewModelProvider.Factory {
     private DataManager dataManager;
-    private ExchangeConvertor convertor;
+    private ExchangeConverter convertor;
 
-    public MainActivityViewModelFactory(DataManager dataManager, ExchangeConvertor convertor) {
+    public MainActivityViewModelFactory(DataManager dataManager, ExchangeConverter convertor) {
         this.dataManager = dataManager;
         this.convertor = convertor;
     }

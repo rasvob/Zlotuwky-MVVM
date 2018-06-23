@@ -51,7 +51,7 @@ public class SetOwnRateFragmentDialog extends DialogFragment {
             rate.setError(getString(R.string.bad_input));
             return;
         }
-
+        vm.saveOfficeRate();
         dismiss();
     }
 
